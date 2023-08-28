@@ -185,7 +185,7 @@ export default {
         {
           id: 1,
           image: eatTogether,
-          content: 'Eat Togather',
+          content: 'Eat Together',
         },
         {
           id: 2,
