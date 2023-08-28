@@ -56,7 +56,7 @@
       </form>
       <p class="mt-5 text-gray-700">
         Didn't mean to reset your password?
-        <AppLink class="font-semibold" text="go back" />
+        <AppLink to="/" class="font-semibold" text="go back" />
       </p>
     </div>
     <div
@@ -77,4 +77,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

@@ -1,8 +1,10 @@
 <template>
   <div>
+    <RouterView />
+    <!-- <router-view></router-view> -->
     <!-- <Login /> -->
     <!-- <ForgotPassword /> -->
-    <User />
+    <!-- <User /> -->
   </div>
 </template>
 
@@ -16,4 +18,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

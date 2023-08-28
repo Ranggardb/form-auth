@@ -1,17 +1,17 @@
 <template>
-  <a
+  <RouterLink
     class="capitalize text-theme-maroon hover:text-theme-orange outline-theme-orange p-1"
     :class="class"
-    :href="href"
+    :to="to"
   >
     {{ text }}
-  </a>
+  </RouterLink>
 </template>
 
 <script>
 export default {
   props: {
-    href: {
+    to: {
       type: String,
       default: '#',
     },

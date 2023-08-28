@@ -45,7 +45,11 @@
               <AppButton class="w-full rounded-md" text="sign in" />
 
               <p class="text-xs mt-2 capitalize flex justify-end">
-                <AppLink class="font-semibold" text="forgot password?" />
+                <AppLink
+                  to="/forgot-password"
+                  class="font-semibold"
+                  text="forgot password?"
+                />
               </p>
             </div>
           </form>
@@ -169,6 +173,7 @@ import AppButton from '../../components/Atoms/AppButton.vue';
 import AppInput from '../../components/Atoms/AppInput.vue';
 import AppLink from '../../components/Atoms/AppLink.vue';
 import AppCard from '../../components/Molecules/AppCard.vue';
+import { router } from '../../router';
 
 export default {
   components: { AppCard, AppInput, AppButton, AppLink },
@@ -226,7 +231,9 @@ export default {
     autoSlide() {
       this.sliderInterval;
     },
-    handleSubmit() {},
+    handleSubmit() {
+      router.push('/user');
+    },
   },
   mounted() {
     this.autoSlide();
